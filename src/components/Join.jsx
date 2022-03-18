@@ -34,13 +34,11 @@ const JoinDiv = styled.div`
   margin-left: 15%;
 
   @media (max-width: 576px) {
-    margin: auto 8%;
+    margin: auto 10%;
     padding: 10px;
   }
 
-  @media (max-width: 439px) {
-    margin: auto;
-  }
+  
 `;
 
 const JoinTitle = styled.h1`
@@ -56,10 +54,6 @@ const JoinTitle = styled.h1`
     max-width: 350px;
   }
 
-  @media (max-width: 439px) {
-    font-size: 20px;
-    max-width: 220px;
-  }
 `;
 
 const JoinForm = styled.form`
