@@ -38,8 +38,7 @@ const ServicesContainer = styled.div`
 `;
 
 const ServicesImg = styled.img`
-  max-width: 1366px;
-  max-height: 727px;
+  height: 100%;
 
   @media (max-width: 992px) {
     position: absolute;
