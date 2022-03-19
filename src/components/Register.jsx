@@ -199,6 +199,10 @@ padding: 20px 50px;
 @media (max-width: 576px) {
   height: 100%;
 }
+
+@media (max-width: 400px) {
+  width: 100%;
+}
 `;
 
 const Title = styled.h1`
