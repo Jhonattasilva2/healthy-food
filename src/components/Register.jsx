@@ -73,175 +73,7 @@ function Register({ img }) {
       .catch((err) => console.log(err));
   };
 
-  //CSS of the page
-  const Section = styled.section`
-    width: 100%;
-    height: 100vh;
-    display: flex;
-
-    @media (max-width: 992px) {
-      position: relative;
-    }
-  `;
-
-  const BackgroundImage = styled.img`
-    height: 100vh;
-
-    @media (max-width: 992px) {
-      position: absolute;
-      left: 0%;
-      opacity: 0.12;
-      z-index: -1;
-    }
-  `;
-
-  const SectionDiv = styled.div`
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 1px 5px 10px #bcbcbc;
-    padding: 20px 50px;
-  `;
-
-  const Title = styled.h1`
-    font-family: "Montserrat", sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #1d164d;
-    margin: 15px 0;
-    text-align: center;
-  `;
-
-  const Form = styled.form`
-    display: flex;
-    flex-direction: column;
-  `;
-
-  const Input = styled.input`
-    width: 100%;
-    height: 35px;
-    border-radius: 6px;
-    font: 18px "Muli", sans-serif;
-    margin: 3% 0;
-    border: solid 1px #9e9baf;
-
-    &:focus {
-      outline-color: #badc58;
-    }
-
-    &::placeholder {
-      padding-left: 10px;
-    }
-  `;
-
-  const SpanValidation = styled.span`
-    color: red;
-    font-size: 13px;
-  `;
-
-  const SubmitButton = styled.button`
-    border: none;
-    background-color: #badc58;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    margin-top: 1rem;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #abca4f;
-    }
-
-    &:active {
-      transform: scale(0.98);
-    }
-  `;
-
-  const ModalContainer = styled(Modal)`
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `;
-
-  const DivModal = styled.div`
-    width: 50%;
-    height: 50%;
-    background: #fff;
-    box-shadow: 1px 5px 10px #bcbcbc;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    @media (max-width: 992px) {
-      width: 67%;
-      
-    }
-  `;
-
-  const ModalTitle = styled.h2`
-    font-family: "Montserrat", sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 30px;
-    color: #1d164d;
-
-    @media (max-width: 992px) {
-      font-size: 26px;
-      margin: auto 50%;
-    }
-
-    @media (max-width: 576px) {
-      margin: 0 50%;
-    }
-  `;
-
-  const ModalText = styled.p`
-    font-family: "Muli", sans-serif;
-    font-size: 16px;
-    padding: 30px;
-    color: #9e9baf;
-
-    @media (max-width: 576px) {
-      text-align: center;
-      margin: 0;
-    }
-  `;
-
-  const ModalSpan = styled.span`
-    font-family: "Muli", sans-serif;
-    font-size: 10px;
-    color: #9e9baf;
-    margin: 3%;
-
-    @media (max-width: 576px) {
-      display: none;
-    }
-  `;
-
-  const ModalLink = styled(Link)`
-    border: none;
-    background-color: #badc58;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    @media (max-width: 576px) {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  `;
+  
 
   return (
     <Section>
@@ -331,5 +163,177 @@ function Register({ img }) {
     </Section>
   );
 }
+
+
+//CSS of the page
+const Section = styled.section`
+width: 100%;
+height: 100vh;
+display: flex;
+
+@media (max-width: 992px) {
+  position: relative;
+}
+`;
+
+const BackgroundImage = styled.img`
+height: 100vh;
+
+@media (max-width: 992px) {
+  position: absolute;
+  left: 0%;
+  opacity: 0.12;
+  z-index: -1;
+}
+`;
+
+const SectionDiv = styled.div`
+max-height: 100%;
+display: flex;
+flex-direction: column;
+margin: auto;
+border-radius: 8px;
+box-shadow: 1px 5px 10px #bcbcbc;
+padding: 20px 50px;
+`;
+
+const Title = styled.h1`
+font-family: "Montserrat", sans-serif;
+font-size: 32px;
+font-weight: bold;
+color: #1d164d;
+margin: 15px 0;
+text-align: center;
+`;
+
+const Form = styled.form`
+display: flex;
+flex-direction: column;
+`;
+
+const Input = styled.input`
+width: 100%;
+height: 35px;
+border-radius: 6px;
+font: 18px "Muli", sans-serif;
+margin: 3% 0;
+border: solid 1px #9e9baf;
+
+&:focus {
+  outline-color: #badc58;
+}
+
+&::placeholder {
+  padding-left: 10px;
+}
+`;
+
+const SpanValidation = styled.span`
+color: red;
+font-size: 13px;
+`;
+
+const SubmitButton = styled.button`
+border: none;
+background-color: #badc58;
+color: #fff;
+padding: 15px 30px;
+border-radius: 5px;
+margin-top: 1rem;
+cursor: pointer;
+
+&:hover {
+  background-color: #abca4f;
+}
+
+&:active {
+  transform: scale(0.98);
+}
+`;
+
+const ModalContainer = styled(Modal)`
+width: 100%;
+height: 100%;
+background-color: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+
+const DivModal = styled.div`
+width: 50%;
+height: 50%;
+background: #fff;
+box-shadow: 1px 5px 10px #bcbcbc;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+@media (max-width: 992px) {
+  width: 67%;
+  
+}
+`;
+
+const ModalTitle = styled.h2`
+font-family: "Montserrat", sans-serif;
+font-size: 28px;
+font-weight: bold;
+padding: 30px;
+color: #1d164d;
+
+@media (max-width: 992px) {
+  font-size: 26px;
+  margin: auto 50%;
+}
+
+@media (max-width: 576px) {
+  margin: 0 50%;
+}
+`;
+
+const ModalText = styled.p`
+font-family: "Muli", sans-serif;
+font-size: 16px;
+padding: 30px;
+color: #9e9baf;
+
+@media (max-width: 576px) {
+  text-align: center;
+  margin: 0;
+}
+`;
+
+const ModalSpan = styled.span`
+font-family: "Muli", sans-serif;
+font-size: 10px;
+color: #9e9baf;
+margin: 3%;
+
+@media (max-width: 576px) {
+  display: none;
+}
+`;
+
+const ModalLink = styled(Link)`
+border: none;
+background-color: #badc58;
+color: #fff;
+padding: 15px 30px;
+border-radius: 5px;
+cursor: pointer;
+
+&:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+`;
+
 
 export default Register;
