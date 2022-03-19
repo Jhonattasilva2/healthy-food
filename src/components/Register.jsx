@@ -195,6 +195,10 @@ margin: auto;
 border-radius: 8px;
 box-shadow: 1px 5px 10px #bcbcbc;
 padding: 20px 50px;
+
+@media (max-width: 576px) {
+  height: 100%;
+}
 `;
 
 const Title = styled.h1`
